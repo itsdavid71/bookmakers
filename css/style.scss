@@ -191,6 +191,7 @@ h1 {
     width: 100%;
     height: 22px;
     margin-right: 51px;
+    top: 3px;
     img {
         width: 115px;
         height: 20px;
@@ -239,10 +240,16 @@ h1 {
 }
 .rating-stars {
     margin-right: 4px;
+    position: relative;
+    top: 1px;
     img {
+        margin-right: 4px;
+        &:last-child {
+            margin-right: 0;
+        }
         &:hover {
             cursor: pointer;
-            }
+        }
     }
 }
 .rating-num {
@@ -307,7 +314,7 @@ h1 {
     line-height: 24px;
     position: relative;
     width: fit-content;
-    top: -1px;
+    top: 1px;
 
     &.purple {
         color: $color-purple;
@@ -329,7 +336,7 @@ h1 {
     display: flex;
     position: relative;
     margin-left: auto;
-    top: -1px;
+    top: 2px;
 }
 
 .main-list_item_buttons_item {

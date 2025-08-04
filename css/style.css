@@ -170,6 +170,7 @@ h1 {
   width: 100%;
   height: 22px;
   margin-right: 51px;
+  top: 3px;
 }
 .main-list_item_logo img {
   width: 115px;
@@ -213,6 +214,14 @@ h1 {
 
 .rating-stars {
   margin-right: 4px;
+  position: relative;
+  top: 1px;
+}
+.rating-stars img {
+  margin-right: 4px;
+}
+.rating-stars img:last-child {
+  margin-right: 0;
 }
 .rating-stars img:hover {
   cursor: pointer;
@@ -278,7 +287,7 @@ h1 {
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  top: -1px;
+  top: 1px;
 }
 .badge.purple {
   color: rgb(176, 43, 200);
@@ -299,7 +308,7 @@ h1 {
   display: flex;
   position: relative;
   margin-left: auto;
-  top: -1px;
+  top: 2px;
 }
 
 .main-list_item_buttons_item {
