@@ -1,3 +1,11 @@
+$color-primary: rgba(38, 47, 86, 1);
+$color-success: rgba(0, 198, 89, 1);
+$color-error: rgba(200, 43, 50, 1);
+$color-purple: rgba(176, 43, 200, 1);
+$color-border: rgba(217, 234, 250, 1);
+$color-bg-gray: rgba(246, 246, 246, 1);
+$color-white: rgba(255, 255, 255, 1);
+$shadow: 0 0 20px #22222213;
 * {
     padding: 0;
     margin: 0;
@@ -15,24 +23,24 @@ body {
 }
 
 .main {
-    background: rgba(255, 255, 255, 1);
+    background: $color-white;
     max-width: 810px;
     box-shadow: 0 0 20px #22222213;
     margin: 0 auto;
     border-radius: 16px;
-    border: 1px solid rgba(217, 234, 250, 1);
+    border: 1px solid $color-border;
 
 }
 
 .main-top {
     position: relative;
     padding: 38.85px 27px 17px 30px;
-    border-bottom: 1px solid rgba(217, 234, 250, 1);
+    border-bottom: 1px solid $color-border;
 }
 
 .main-bottom_mobile-button {
     display: none;
-    background: rgba(255, 255, 255, 1);
+    background: $color-white;
 }
 .menu {
     position: absolute;
@@ -46,25 +54,26 @@ body {
         border-radius: 1000px;
         margin-bottom: 2px;
         height: 4px;
-        background: rgba(38, 47, 86, 1);
+        background: $color-primary;
     }
 }
 
 h1 {
     font-weight: 500;
     font-size: 25px;
-    color: rgba(38, 47, 86, 1);
+    color: $color-primary;
 }
 
 // Tabs
 .main-tabs {
     padding: 0 20px 0 24px;
     display: flex;
-    border-bottom: 1px solid rgba(217, 234, 250, 1);
+    border-bottom: 1px solid $color-border;
     
 }
 .main-tabs_item {
     background: #fff;
+    color: $color-primary;
     text-decoration: none;
     cursor: pointer;
     font-size: 14px;
@@ -75,7 +84,7 @@ h1 {
     &::before {
             content: "";
             position: absolute;
-            background: rgba(0, 198, 89, 1);
+            background: $color-success;
             width: 0;
             bottom: 0;
             left: 0;
@@ -118,7 +127,7 @@ h1 {
     padding: 28px 20px 30px;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid rgba(217, 234, 250, 1);
+    border-top: 1px solid $color-border;
 
 
 }
@@ -126,7 +135,7 @@ h1 {
     font-size: 15px;
     font-weight: 500;
     position: relative;
-    color: rgba(38, 47, 86, 1);
+    color: $color-primary;
     text-decoration: none;
     padding-right: 20px;
     
@@ -150,7 +159,7 @@ h1 {
 }
 
 .main-bottom_right {
-    color: rgba(0, 198, 89, 1);
+    color: $color-success;
     font-size: 15px;
     text-decoration: underline;
     font-weight: 500;
@@ -164,7 +173,7 @@ h1 {
 .main-list_item {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgba(217, 234, 250, 1);
+    border-bottom: 1px solid $color-border;
     padding: 0 20px;
     height: 68px;
     justify-content: space-between;
@@ -225,7 +234,7 @@ h1 {
 
 .loading {
     padding: 20px;
-    color: rgba(38, 47, 86, 1);
+    color: $color-primary;
     
 }
 .rating-stars {
@@ -239,7 +248,7 @@ h1 {
 .rating-num {
     font-size: 15px;
     font-weight: 500;
-    color: rgba(38, 47, 86, 1);
+    color: $color-primary;
 }
 
 .main-list_item_chat {
@@ -257,7 +266,7 @@ h1 {
 .chat-num {
     font-size: 15px;
     font-weight: 500;       
-    color: rgba(38, 47, 86, 1);
+    color: $color-primary;
 }
 
 .main-list_item_bonus {
@@ -285,7 +294,7 @@ h1 {
 .bonus-num {
     font-size: 15px;
     font-weight: 500;       
-    color: rgba(38, 47, 86, 1);
+    color: $color-primary;
     position: relative;
 }
 
@@ -301,17 +310,17 @@ h1 {
     top: -1px;
 
     &.purple {
-        color: rgba(176, 43, 200, 1);
+        color: $color-purple;
         background: rgba(176, 43, 200, 0.12);
         margin-bottom: 3px;
     }
     &.green {
-        color: rgba(0, 198, 89, 1);
+        color: $color-success;
         background: rgba(0, 198, 89, 0.12);
         margin-bottom: 3px;
     }
     &.red {
-        color: rgba(200, 43, 50, 1);
+        color: $color-error;
         background: rgba(200, 43, 50, 0.12);
     }
 }
@@ -324,8 +333,8 @@ h1 {
 }
 
 .main-list_item_buttons_item {
-    color: rgba(38, 47, 86, 1);
-    background:rgba(246, 246, 246, 1);
+    color: $color-primary;
+    background:$color-bg-gray;
     font-size: 12px;    
     font-weight: 500;
     border-radius: 6px;
@@ -344,7 +353,7 @@ h1 {
         margin-right: 10px;
     }
     &.green {
-        background: rgba(0, 198, 89, 1);
+        background: $color-success;
         color: #fff;
         position: relative;
         &::before {
@@ -371,7 +380,7 @@ h1 {
             &::after {
                 content: "";
                 position: absolute;
-                background: rgba(0, 198, 89, 1);
+                background: $color-success;
                 left: 0;
                 right: 0;
                 z-index: 1;
@@ -510,8 +519,8 @@ h1 {
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 500;
-        color: rgba(38, 47, 86, 1);
-        border: 1px solid rgba(217, 234, 250, 1);
+        color: $color-primary;
+        border: 1px solid $color-border;
         height: 65px;
         display: block;
         margin-top: 8px;

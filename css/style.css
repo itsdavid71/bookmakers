@@ -65,6 +65,7 @@ h1 {
 
 .main-tabs_item {
   background: #fff;
+  color: rgb(38, 47, 86);
   text-decoration: none;
   cursor: pointer;
   font-size: 14px;
